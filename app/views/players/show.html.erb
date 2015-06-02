@@ -3,6 +3,7 @@
 <ul>
   <li> Played for <%= pluralize(@player.teams.length, 'team') %> </li>
   <li> <%= @player.teams.join(' ').gsub(' ', ', ') %> </li>
+  <li> <%= link_to('Edit', edit_player_path(@player.id)) %> or <%= link_to('Delete', player_path(@player.id), method: :delete) %> </li>
 </ul>
 
 <iframe width="850" height="480" src="<%= @url_embed %>"  frameborder="0" allowfullscreen></iframe>

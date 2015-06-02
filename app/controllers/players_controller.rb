@@ -20,11 +20,13 @@ class PlayersController < ApplicationController
   end
 
   def edit
-    # show the form
+    @player = Player.find(params[:id])
   end
 
   def update
-    @player = Player.update(player_params)
+    @player = Player.find(params[:id])
+    @player.update(player_params)
+    # why not just do params[:player] ?
     redirect_to(player_path)
   end
 
