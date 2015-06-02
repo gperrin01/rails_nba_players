@@ -9,7 +9,9 @@ body {
   display: inline;
   padding: 0 10px;
 }
-
+#yield-container {
+  margin: 0px 150px;
+}
 .player-container {
   margin: 10px 15px;    
 }
