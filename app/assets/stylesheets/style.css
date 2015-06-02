@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+.ib {
+  display: inline-block;
+}
+
+.nav-list li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.player-container {
+  margin: 10px 15px;    
+}
+
