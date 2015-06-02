@@ -16,6 +16,7 @@ class PlayersController < ApplicationController
 
   def show
     @player = Player.find(params[:id])
+    @url_embed = @player.video.gsub('watch?v=', 'embed/')
   end
 
   def edit

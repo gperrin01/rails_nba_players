@@ -2,5 +2,7 @@
 
 <ul>
   <li> Played for <%= pluralize(@player.teams.length, 'team') %> </li>
-  <li> <%= @player.teams.join(' ') %> </li>
+  <li> <%= @player.teams.join(' ').gsub(' ', ', ') %> </li>
 </ul>
+
+<iframe width="850" height="480" src="<%= @url_embed %>"  frameborder="0" allowfullscreen></iframe>
