@@ -1,0 +1,27 @@
+<%= form_for @player do |f| %>
+  
+  <div class='form-div'>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  </div>
+  <div class='form-div'>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  </div>
+  <div class='form-div'>
+  <%= f.label :teams %>
+  <%= f.text_field :teams %>
+  </div>
+  <div class='form-div'>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  </div>
+  <div class='form-div'>
+  <%= f.label :video %>
+  <%= f.text_field :video %>
+  </div>
+  <div class='form-div'>
+  <%= f.submit 'Create Player' %>
+  </div>
+
+<% end %>

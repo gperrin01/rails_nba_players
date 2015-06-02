@@ -1,0 +1,6 @@
+<h3> The unofficial <%= @player.first_name + ' ' + @player.last_name %> page </h3>
+
+<ul>
+  <li> Played for <%= pluralize(@player.teams.length, 'team') %> </li>
+  <li> <%= @player.teams.join(' ') %> </li>
+</ul>

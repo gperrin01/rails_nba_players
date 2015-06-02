@@ -13,4 +13,6 @@ body {
 .player-container {
   margin: 10px 15px;    
 }
-
+.form-div {
+  margin: 10px;
+}

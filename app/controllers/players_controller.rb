@@ -5,12 +5,12 @@ class PlayersController < ApplicationController
   end
 
   def new
-    # show the form
+    @player = Player.new
   end
 
   def create
     # get params from the form
-    @player = Player.create(player_params)
+    Player.create(player_params)
     redirect_to(players_path)
   end
 
@@ -35,6 +35,7 @@ class PlayersController < ApplicationController
 
 private
   def player_params
+    params.require(:player).permit(:first_name, :last_name, :teams, :image, :video)
   end
 
 end
